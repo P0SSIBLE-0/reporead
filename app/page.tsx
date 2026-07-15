@@ -166,7 +166,7 @@ export default function Home() {
         {/* Premium multi-color mesh gradient backdrop */}
         <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-[500px] w-full max-w-7xl -translate-x-1/2 bg-[radial-gradient(ellipse_at_top,rgba(0,124,240,0.06),transparent_50%),radial-gradient(ellipse_at_top_right,rgba(121,40,202,0.06),transparent_50%),radial-gradient(ellipse_at_top_left,rgba(255,77,77,0.06),transparent_50%)] blur-3xl" />
 
-        <motion.div initial={{ opacity: 0, y: reduceMotion ? 0 : 8 }} animate={{ opacity: 1, y: 0 }} transition={transition} className="relative mx-auto max-w-3xl text-center">
+        <motion.div initial={{ opacity: 0, y: reduceMotion ? 0 : 8, filter: 'blur(10px)' }} animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }} transition={transition} className="relative mx-auto max-w-3xl text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-hairline bg-canvas px-3.5 py-1 font-mono text-xs text-body shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
             <Sparkles size={13} className="text-violet-500 animate-pulse" />
             <span>AI README generator</span>

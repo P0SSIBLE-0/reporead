@@ -4,7 +4,7 @@ export type GenerationQuota = {
 };
 
 const STORAGE_KEY = "reporead-generation-quota";
-const DAILY_LIMIT = 15;
+const DAILY_LIMIT = 10;
 
 function localDate() {
   const today = new Date();

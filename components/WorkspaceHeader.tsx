@@ -24,9 +24,9 @@ export default function WorkspaceHeader({
     <div className="sticky top-16 z-40 bg-canvas-soft/90 backdrop-blur-md py-4 border-b border-hairline/30 mb-6 flex items-center justify-between">
       <button
         onClick={handleCloseWorkspace}
-        className="inline-flex items-center gap-1.5 text-xs text-body hover:text-ink font-mono transition-colors"
+        className="inline-flex items-center gap-1.5 text-sm font-medium text-body hover:text-ink font-mono cursor-pointer transition-colors"
       >
-        <ArrowLeft size={13} />
+        <ArrowLeft size={14} />
         <span className="hidden sm:inline">Back to Library</span>
         <span className="sm:hidden">Back</span>
       </button>
@@ -36,7 +36,7 @@ export default function WorkspaceHeader({
         <button
           onClick={copyMarkdown}
           aria-label="Copy Markdown"
-          className="inline-flex h-7.5 items-center gap-1.5 rounded border border-hairline bg-canvas px-2.5 font-mono text-[11px] font-medium text-body hover:bg-canvas-soft-2 hover:text-ink active:scale-[0.99] transition-all duration-150"
+          className="inline-flex h-7.5 items-center gap-1.5 rounded border border-hairline cursor-pointer bg-canvas px-2.5 font-mono text-sm font-medium text-body hover:bg-canvas-soft-2 hover:text-ink active:scale-[0.99] transition-all duration-150"
         >
           <div className="relative size-3.5 flex items-center justify-center shrink-0">
             <AnimatePresence mode="wait" initial={false}>
@@ -72,7 +72,7 @@ export default function WorkspaceHeader({
         <button
           onClick={handleSave}
           aria-label={activeSavedId ? "Update README Save" : "Save README to Library"}
-          className="inline-flex h-7.5 items-center gap-1.5 rounded bg-ink px-2.5 font-mono text-[11px] font-medium text-canvas hover:bg-black/90 active:scale-[0.99] transition-all duration-150 relative overflow-hidden"
+          className="inline-flex h-7.5 items-center gap-1.5 rounded bg-ink px-2.5 cursor-pointer font-mono text-sm font-medium text-canvas hover:bg-black/90 active:scale-[0.99] transition-all duration-150 relative overflow-hidden"
         >
           <div className="relative size-3.5 flex items-center justify-center shrink-0">
             <AnimatePresence mode="wait" initial={false}>
@@ -109,7 +109,7 @@ export default function WorkspaceHeader({
         <button
           onClick={downloadMarkdown}
           aria-label="Download README.md"
-          className="inline-flex h-7.5 items-center gap-1.5 rounded border border-hairline bg-canvas px-2.5 font-mono text-[11px] font-medium text-body hover:bg-canvas-soft-2 hover:text-ink active:scale-[0.99] transition-all duration-150"
+          className="inline-flex h-7.5 items-center gap-1.5 rounded border border-hairline cursor-pointer bg-canvas px-2.5 font-mono text-sm font-medium text-body hover:bg-canvas-soft-2 hover:text-ink active:scale-[0.99] transition-all duration-150"
         >
           <Download size={12} />
           <span className="hidden sm:inline">Download</span>
