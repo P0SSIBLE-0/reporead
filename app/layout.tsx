@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "RepoRead",
     images: [
       {
-        url: "https://repoxread.vercel.app/opengraph-image.png",
+        url: "https://repoxread.vercel.app/opengraph-image.jpg",
         width: 1200,
         height: 630,
         alt: "RepoRead — AI README generator",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "RepoRead — AI README generator",
     description: "Generate polished, editable README files for public GitHub repositories.",
-    images: ["https://repoxread.vercel.app/opengraph-image.png"],
+    images: ["https://repoxread.vercel.app/opengraph-image.jpg"],
     creator: "@reporead",
   },
 };
