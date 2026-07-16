@@ -31,13 +31,13 @@ export default function RepoInputForm({
   return (
     <form onSubmit={onSubmit} className="relative mx-auto mt-10 max-w-2xl">
       <label htmlFor="repo-url" className="sr-only">Public GitHub repository URL</label>
-      <div className={`relative group overflow-hidden rounded-md p-[1.75px] transition-all duration-300 ${error ? "bg-error-deep/40" : "bg-hairline hover:bg-hairline-strong focus-within:bg-hairline-strong"} shadow-[0_1px_2px_rgba(0,0,0,0.02),0_4px_12px_rgba(0,0,0,0.02)]`}>
+      <div className={`relative group overflow-hidden rounded-[7px] p-[1.75px] transition-all duration-300 ${error ? "bg-error-deep/40" : "bg-hairline hover:bg-hairline-strong focus-within:bg-hairline-strong"} shadow-[0_1px_2px_rgba(0,0,0,0.02),0_4px_12px_rgba(0,0,0,0.02)]`}>
         {!error && (
           <motion.span
             className="absolute inset-[-1000%] bg-[conic-gradient(from_0deg,#7928ca_0deg,#ff0080_120deg,#0070f3_240deg,#7928ca_360deg)] opacity-25 group-hover:opacity-60 group-focus-within:opacity-90 transition-opacity duration-300"
             animate={reduceMotion ? {} : { rotate: [0, 360] }}
             transition={{
-              duration: 8,
+              duration: 7,
               repeat: Infinity,
               ease: "linear",
             }}

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "RepoRead",
     images: [
       {
-        url: "https://repoxread.vercel.app/og-image.png",
+        url: "https://repoxread.vercel.app/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "RepoRead — AI README generator",
@@ -35,10 +35,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "RepoRead — AI README generator",
     description: "Generate polished, editable README files for public GitHub repositories.",
-    images: ["https://repoxread.vercel.app/og-image.png"],
+    images: ["https://repoxread.vercel.app/opengraph-image.png"],
     creator: "@reporead",
   },
 };
+
+import Navbar from "@/components/Navbar";
 
 export default function RootLayout({
   children,
@@ -47,7 +49,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans bg-canvas-soft text-ink">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

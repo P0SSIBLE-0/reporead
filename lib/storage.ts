@@ -4,7 +4,7 @@ export interface SavedReadme {
   id: string;
   fullName: string;
   markdown: string;
-  analysis: RepositoryAnalysis;
+  analysis?: RepositoryAnalysis;
   savedAt: number;
 }
 
@@ -24,7 +24,7 @@ export function getSavedReadmes(): SavedReadme[] {
 export function saveReadme(
   fullName: string,
   markdown: string,
-  analysis: RepositoryAnalysis,
+  analysis?: RepositoryAnalysis,
   id?: string
 ): SavedReadme {
   const readmes = getSavedReadmes();
